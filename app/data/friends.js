@@ -61,10 +61,113 @@
 
 window.onload = function(){
 
-    var slider = document.getElementById("q1");
+    question1();
+
+    function question1() {
+
+        var questionBank1 = [
+            {
+                a1: "Please leave me alone",
+                a2: "I like to stay solitary",
+                a3: "I'm game for alone time or social time",
+                a4: "I like hanging with friends",
+                a5: "I need people like I need water"
+            },
+            {
+                a1: "I do not wake before noon",
+                a2: "I prefer the nights",
+                a3: "Can I be both?",
+                a4: "I like mornings",
+                a5: "If I haven't worked out, had breakfast, and answered work emails by 6am, I am a failure"
+            },
+            {
+                a1: "The other parts of the world hold nothing of value to me",
+                a2: "I'm okay to move around every few years",
+                a3: "Move? Stay? Whatever.",
+                a4: "I travel when I can",
+                a5: "I can't stay put for long"
+            },
+            {
+                a1: "No.",
+                a2: "I had a fish once",
+                a3: "Animals are cool",
+                a4: "I've always had pets in my home",
+                a5: "YES!"
+            },
+            {
+                a1: "What is this 'outdoor'?",
+                a2: "I prefer indoor stuff",
+                a3: "Wherever I feel like chilling",
+                a4: "I tend to favor the outdoors",
+                a5: "FRESH AIR IS THE ONLY AIR"
+            },
+            {
+                a1: "Ew",
+                a2: "It's okay",
+                a3: "Pizza is good",
+                a4: "I love pizza",
+                a5: "Pizza is love. Pizza is life."
+            },
+            {
+                a1: "Social media is a plague on the human race",
+                a2: "I check stuff once in awhile",
+                a3: "I use mostly to keep up with the goings on",
+                a4: "I'm on social media for several hours every day",
+                a5: "Currently in the process of checking Twitter"
+            },
+            {
+                a1: "The colder the better. BRING ON THE SNOW!",
+                a2: "Sweater Weather is my favorite season",
+                a3: "Ya know, whatever",
+                a4: "Cool but not cold, warm but not hot",
+                a5: "I'd be happy to never see a cloud again"
+            },
+            {
+                a1: "Well, I'm currently taking a quiz to find a friend...",
+                a2: "I can, but not easily",
+                a3: "Kinda",
+                a4: "I certainly don't struggle",
+                a5: "People just flock to me for friendship"
+            },
+            {
+                a1: "My spirit animal is a sloth",
+                a2: "I'm pretty calm",
+                a3: "I am the embodiment of neutrality",
+                a4: "I can be exciteable ",
+                a5: "WOOOOOOOOOOOOOO"
+            }
+        ];
+        
+        var slider = document.getElementById("q1");
+        var input = slider.value;
     
-    slider.oninput = function() {
-        $("#user-choice").text(slider.value);
+        slider.oninput = function() {
+            input = slider.value;
+
+            switch(input) {
+                case "1":
+                $("#user-choice").text(questionBank1[0].a1);
+                break;
+
+                case "2":
+                $("#user-choice").text(questionBank1[0].a2);
+                break;
+
+                case "3":
+                $("#user-choice").text(questionBank1[0].a3);
+                break;
+
+                case "4":
+                $("#user-choice").text(questionBank1[0].a4);
+                break;
+
+                case "5":
+                $("#user-choice").text(questionBank1[0].a5);
+                break;
+            };
+            
+        };
     };
+    
 
 };
