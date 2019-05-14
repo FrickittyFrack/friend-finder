@@ -1,9 +1,9 @@
 body {
-    background-image: url("../images/sil5.png"), url("../images/sil7.png"), url("../images/fab.png");
-    background-position: 100% 87%, 2% 83%, 34% 56%;
-    background-attachment: fixed, fixed, fixed;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 150px 300px, 392px 300px, 159px 60px;
+    background-image: url("../images/sil5.png"), url("../images/sil7.png");
+    background-position: 80% 90%, 12% 88%;
+    background-attachment: fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 150px 300px, 392px 300px;
 }
 
 .purple-btn {
@@ -15,7 +15,7 @@ body {
     height: 265px;
     padding: 45px;
     background-color: rgb(220, 220, 220);
-    margin: 60px;
+    margin: 60px auto;
     text-align: center;
 }
 

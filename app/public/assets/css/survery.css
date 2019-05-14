@@ -8,6 +8,21 @@
   border-top: none;
 }
 
+#name-desc-input {
+  width: 60%;
+  height: 80%;
+  margin: 20px auto;
+  border: solid 5px #d3b0f5;
+  padding: 15px;
+}
+
+#secondary-title {
+  font-size: 27px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
 #quiz-container {
   width: 50%;
   height: 80%;
@@ -76,6 +91,10 @@
   color: rgb(106, 13, 192);
 }
 
+#links {
+  text-align: center;
+}
+
 #footer {
   color: white;
   background-color: rgb(46, 46, 46);
@@ -86,4 +105,17 @@
   width: 100%;
   position: relative;
   bottom: 0;
+}
+
+.modal-header .close-custom {
+  margin: 0px !important;
+}
+
+.modal-header-custom {
+  color: rgb(101, 0, 148);
+  justify-content: unset !important;
+}
+
+.modal-title-custom {
+  padding: 20px;
 }

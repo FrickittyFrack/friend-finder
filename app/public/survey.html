@@ -6,10 +6,10 @@
         <title>Friend Finder</title>
         
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
         
         <!-- CSS Link -->
-        <link rel="stylesheet" href="assets/css/survery.css">
+        <link rel="stylesheet" href="./assets/css/survery.css">
 
         <!-- Styling -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -30,6 +30,29 @@
         <div id="title-card">
 
             So I've gotta ask you...
+
+        </div>
+
+        <!-- Input for Name, Photo, and Desc -->
+        <div id="name-desc-input">
+
+            <h4>What's your name?</h4>
+            <h8>(non-optional)</h8>
+            <input type="text" id="name" class="form-control" required>
+
+            <h4>What do ya look like?</h4>
+            <h8>(also non-optional)</h8>
+            <input type="text" id="photo" placeholder="Add a link to a photo" class="form-control" required>
+
+            <h4>And add a sentence or 2 about YOU</h4>
+            <h8>(optional, but you'll be judged thoroughly without it)</h8>
+            <input type="text" id="desc" class="form-control" required>
+
+        </div>
+
+        <div id="secondary-title">
+
+            And More Importantly...
 
         </div>
         
@@ -195,7 +218,29 @@
         </div>
 
         <!-- Modal for Matcher -->
-        <div></div>
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header modal-header-custom">
+                        <button class="close close-custom" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title modal-title-custom"><strong>Here's your new friend!</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img" src="" alt="">
+                        <h4 id="match-desc"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links to API and GitHub -->
+        <div id="links">
+
+            <p><a href="/api/list-o-people">API List</a> | <a href="">GitHub</a></p>
+
+        </div>
 
         <!-- Footer -->
         <div id="footer">
@@ -205,7 +250,7 @@
         </div>
 
         <!-- Javascript Link -->
-        <script src="../data/friends.js"></script>
+        <script src="./assets/Javascript/survey.js"></script>
 
     </body>
         
